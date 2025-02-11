@@ -40,7 +40,7 @@
       socket.on('chat message', (msg, serverOffset, username) => { // serverOffset = result.lastInsertRowid.toString()
         const item = `<li>
           <p>${msg}</p>
-          <smal>${username}</small>
+          <small>${username}</small>
           </li>`
         messages.insertAdjacentHTML('beforeend', item);
         socket.auth.serverOffset = serverOffset;
